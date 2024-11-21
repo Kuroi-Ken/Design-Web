@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    max-width: 100%;
+  }
+  
+  body {
+    font-family: "Agdasima", sans-serif;
+    background-image: url('../asset/bg1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 722px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #27252e;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px; /* Initial width with only icon */
+    height: 100vh;
+    background-color: #333;
+    overflow: hidden;
+    transition: width 600ms ease;
+  }
+  
+  
+  .main { 
+    padding: 25px;
+    justify-content: left;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  
+  .sidebar:hover {
+    width: 220px; /* Expanded width on hover */
+  }
+  
+  .menu-icon {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0;
+    padding-top: 40px;
+    cursor: pointer;
+    justify-content: center;
+    transition: opacity 600ms ease;
+    max-width: 100%;
+  }
+  
+  .nav li .game{
+    gap: 10px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .nav li a .arrow{
+    transition: transform 300ms ease;
+    margin-top: 5px;
+  }
+  
+  .sidebar:hover .menu-icon {
+    opacity: 0;
+  }
+  
+  .sidebar li:hover >  a .arrow{
+    transform: rotate(90deg);
+  }
+  
+  .nav {
+    list-style: none;
+    padding: 20px;
+    position: fixed;
+  }
+  
+  .nav li {
+    padding: 15px 0;
+  }
+  
+  .nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 20px;
+    display: block;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 600ms ease, transform 600ms ease;
+    transform: translateX(-10px); /* Slide effect */
+  }
+  
+  .sidebar:hover .nav li a {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .home {
+    list-style: none;
+    padding-left: 20px;
+    opacity: 0; 
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1000ms ease, max-height 1000ms ease;
+  }
+  
+  .nav li:hover .home {
+    opacity: 1;
+    max-height: 300px; 
+  }
+
+  .content{
+    width: 50%;
+    margin-right: 40px;
+    transition: transform 600ms ease;
+  }
+
+  .content h1{
+    color: white;
+    font-size: 90px;
+  }
+
+  .content p{
+    color: white;
+    font-size: 30px;
+  }
+
+.pict{
+    transition: transform 600ms ease;
+}
+
+  .pict img{
+    height: 430px;
+    width: 445px;
+    border-radius: 99999px;
+  }
+
+.sidebar:hover ~ .content,
+.sidebar:hover ~ .pict {
+    transform: translateX(100px);
+}

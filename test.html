@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Feature Demo</title>
+    <style>
+        /* Styling input search */
+        .search-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        #searchInput {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Styling list items */
+        #contentList {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #contentList li {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #333;
+            transition: opacity 300ms ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Search Input -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search..." />
+    </div>
+
+    <!-- Content List -->
+    <ul id="contentList">
+        <li>Genshin Impact</li>
+        <li>Mobile Legends: Bang Bang</li>
+        <li>Honkai: Star Rail</li>
+        <li>Valorant</li>
+        <li>Apex Legends</li>
+    </ul>
+
+    <script>
+        // JavaScript for live search
+        const searchInput = document.getElementById("searchInput");
+        const contentList = document.getElementById("contentList");
+        const listItems = contentList.getElementsByTagName("li");
+
+        searchInput.addEventListener("keyup", function () {
+            const filter = searchInput.value.toLowerCase();
+
+            Array.from(listItems).forEach(function (item) {
+                const text = item.textContent || item.innerText;
+                if (text.toLowerCase().includes(filter)) {
+                    item.style.display = ""; // Show matching items
+                    item.style.opacity = 1;
+                } else {
+                    item.style.display = "none"; // Hide non-matching items
+                    item.style.opacity = 0;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

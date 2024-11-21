@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/hsr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-icon">
+            <i data-feather="menu"></i>
+        </div>
+        <ul class="nav">
+            <li><a href="#">Profile</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="game" href="#">Game
+                <i class="arrow" data-feather="chevron-right"></i>
+            </a>
+                <ul class="home">
+                    <li><a href="genshin.html">Genshin Impact</a></li>
+                    <li><a href="#">Mobile Legends</a></li>
+                    <li><a href="hsr.html">Honkai: Star Rail</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="heading">
+            <h1 class="title">Honkai: Star Rail</h1>
+            <p>Find Your Character</p>
+            <input class="search" type="text" placeholder="Search..." id="searchInput">
+        </div>
+        <div class="pict"></div>
+        <div class="content">
+            <div class="box" id="characterContainer">
+                <div class="chara-box">
+                    <a class="chara" href="acheron.html">
+                        <img src="asset/acheron.jfif" alt="">
+                        <p>Acheron</p>
+                    </a>
+                </div>
+                <div class="chara-box">
+                    <a class="chara" href="">
+                        <img src="asset/ruan.jfif" alt="">
+                        <p>Ruan Mei</p>
+                    </a>
+                </div>
+                <div class="chara-box">
+                    <a class="chara" href="">
+                        <img src="asset/avent.jfif" alt="">
+                        <p>Aventurine</p>
+                    </a>
+                </div>
+                <div class="chara-box">
+                    <a class="chara" href="">
+                        <img src="asset/ratio.jfif" alt="">
+                        <p>Ratio</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/hsr.js"></script>
+</body>
+</html>

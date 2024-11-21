@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludium</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-icon">
+            <i data-feather="menu"></i>
+        </div>
+        <ul class="nav">
+            <li><a href="#">Profile</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="game" href="#">Game
+                <i class="arrow" data-feather="chevron-right"></i>
+            </a>
+                <ul class="home">
+                    <li><a href="genshin.html">Genshin Impact</a></li>
+                    <li><a href="#">Mobile Legends</a></li>
+                    <li><a href="hsr.html">Honkai: Star Rail</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="logo">
+            <img src="asset/L.jfif" alt="">
+        </div>
+        <div class="heading">
+            <h1>Ludium</h1>
+            <p>Your Best Partner for Your <br>
+             Best Character Build & Equipment</p>
+             <a href="#" class="more" id="learn-more-btn">Explore More</a>
+        </div>
+        <div class="music">
+            <audio id="music" class="music-image" src="asset/Lovers' Oath.mp3"></audio>
+            <a href="#" class="play" onclick="toggleMusic(); return false;">
+                <i id="music-icon" data-feather="play"></i>
+                Music
+            </a>
+        </div>
+        <div class="login">
+            <a href="login.html"> 
+                <i data-feather="log-in"></i>
+                Login
+            </a>
+        </div>
+    </div>
+    <div class="main-contain" id="main-section">
+        <div class="genshin">
+            <div class="gpic">
+                <img src="asset/gpic.jfif" alt="">
+            </div>
+            <div class="gbout">
+                <h1>Genshin Impact</h1>
+                <p>Genshin Impact adalah permainan role-playing action (ARPG) yang dikembangkan oleh miHoYo. Dirilis pada 28 September 2020, game ini tersedia untuk berbagai platform, termasuk PC, PlayStation,<br>
+                    dan perangkat mobile, dengan versi Nintendo Switch yang akan datang.
+                    Pemain mengendalikan karakter yang dikenal sebagai "Traveler," yang mencari saudara mereka yang hilang di dunia Teyvat.</p>
+                <a class="lm" href="genshin.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content1">
+        <div class="mlbb">
+            <div class="mbout">
+                <h1>Mobile Legends: Bang Bang</h1>
+                <p>Mobile Legends: Bang Bang (MLBB) adalah permainan mobile multiplayer online battle arena (MOBA) yang dikembangkan oleh Moonton. <br>
+                Dirilis pada 2016, game ini sangat populer di Asia Tenggara dan di seluruh dunia, khususnya di kalangan pemain yang menyukai permainan kompetitif di perangkat mobile.</p>
+                <a class="lm1" href="#">Learn More</a>
+            </div>
+            <div class="mpic">
+                <img src="asset/mpic.jfif" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="main-content2">
+        <div class="hsr">
+            <div class="hpic">
+                <img src="asset/hpic.jfif" alt="">
+            </div>
+            <div class="hbout">
+                <h1>Honkai: Star Rail</h1>
+                <p>Honkai: Star Rail (HSR) adalah permainan turn-based RPG yang dikembangkan oleh HoYoverse, dirilis pada 26 April 2023. Game ini adalah bagian dari seri Honkai namun berdiri sendiri, berfokus pada petualangan antar galaksi.
+                    Pemain memulai perjalanan sebagai "Trailblazer," seorang karakter yang bergabung dengan kru kereta luar angkasa bernama Astral Express.</p>
+                <a class="lm" href="hsr.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
